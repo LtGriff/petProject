@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../CSS/shop.css">
+    <title>    Shop    </title>
+</head>
+<body>
+    
+  <body>
+    <!--NAV*****************BAR-->
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Paws & Claws
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="index.html" target="">Home</a>
+          <a href="about.html" target="_blank">About</a>
+          <a href="contact.html" target="_blank">Contact</a>
+          <a href="giftcard.html" target="_blank">Gift Cards</a>
+        </div>
+     <!-------------NAV*******BAR********END----------------------->
+
+
+
+    <!------------------HEADER*******SECTION---------------------->
+
+
+ <div class="dogfield"></div>
+
+ <header id="header-section">
+  <div class="header-text container">
+      <h1>New Pets Get <br> 50%  Off On Products!</h1>
+      <p>
+         New pets require fresh food, toys, grooming products, medcine and maybe even clothing!<br> Luckily we have all that and can provide a hefty discount when you adopt with us!
+      </p>
+      <input id="userInput" type="email" placeholder="Your Email Address" required>
+      <a class="cta" href="#">Sign Up</a>
+      <p id="error">Please provide a valid email address</p>
+  </div>
+</header>
+
+
+
+<main>
+  <section class="shopping">
+      <div class="shopping-products container">
+          <h2 id="Shop"> Shop</h2>
+          <div class="side-navbar text-center">
+              <ul>
+                  <li>
+                      <a href="#">All</a>
+                  </li>
+                  <li>
+                      <a href="#">Food</a>
+                  </li>
+                  <li>
+                      <a href="#">Treats</a>
+                  </li>
+                  <li>
+                      <a href="#">Cleaning Supplies</a>
+                  </li>
+                  <li>
+                      <a href="#">Beds & Funiture</a>
+                  </li>
+                  <li>
+                      <a href="#">Crates & Gates</a>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Start of Products imgs displayed thru JS -->
+          <div id="market" class="row"></div>
+          <!-- End of Products -->
+      </div>
+  </section>
+ <!-- Brand section -->
+  <div class="container brands">
+      <hr>
+      <h2>Brands We Love</h2>
+      <div class="row">
+          <div class="col-lg-2 d-flex justify-content-center">
+              <img src="img/BRLOGO-NaturesVariety.png" alt="instinct logo">
+          </div>
+
+          <div class="col-lg-2 d-flex justify-content-center"> 
+              <img src="img/BRLOGO-Nutro.png" alt="nutro logo">
+          </div>
+
+          <div class="col-lg-2 d-flex justify-content-center">
+              <img src="img/BRLOGO-PurinaFancy.png" alt="purina fancy feast logo">
+          </div>
+
+          <div class="col-lg-2 d-flex justify-content-center">
+              <img src="img/BRLOGO-PurinaFriskies.png" alt="purina friskies logo">
+          </div>
+
+          <div class="col-lg-2 d-flex justify-content-center">
+              <img src="../img/nutro.jpg" alt="hill's science diet logo">
+          </div>
+
+          <div class="col-lg-2 d-flex justify-content-center">
+              <img src="../img/orijen.png" alt="blue logo">
+          </div>
+      </div>
+  </div>
+</main>
+
+<!------------------Footer*************section------------------->
+<footer>
+  <div class="container">
+      <div class="row">
+         <div class="col-lg-3">
+          <a class="navbar-brand" href="#">The Pet Sh<span><i class="fas fa-paw"></i></span>p</a>
+         </div>
+
+          <div class="col-lg-6 d-flex justify-content-center">
+          <form action="">
+              <input type="email" placeholder="Stay Connected!">
+              <a href="#" class="cta">Submit</a>
+          </form>
+          </div>
+
+          <div class="col-lg-3 d-flex justify-content-center">
+          <div class="social-icons">
+              <i class="fab fa-instagram"></i>
+          </div>
+
+          <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+          </div>
+
+          <div class="social-icons">
+              <i class="fab fa-twitter"></i>
+          </div>
+          
+          <div class="social-icons">
+              <i class="fab fa-youtube"></i>
+          </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+<script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            let links = document.getElementsByClassName("nav-link")
+
+            for (let i = 0; i < links.length; i++) {
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                    document.getElementById("nav-bar").classList.add("color");
+                    document.getElementById("pawLogo").classList.add("link-color");
+                    document.getElementById("phone-number").style.border =  "1px solid #21110e";
+                    links[i].classList.add("link-color");
+                    } else {
+                document.getElementById("nav-bar").style.top = "0px";
+                document.getElementById("nav-bar").classList.remove("color");
+                document.getElementById("pawLogo").classList.remove("link-color");
+                document.getElementById("phone-number").style.border =  "1px solid #ffd880";
+                links[i].classList.remove("link-color");
+                }
+            }
+        }
+    </script>
+
+
+
+
+   
+       
+    
+
+
+
+</body>
+</html>

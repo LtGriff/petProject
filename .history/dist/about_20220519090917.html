@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../dist/CSS/about.css">
+    <title>About the Animal House</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+<!-------------NAV***************BAR----------------------->
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Paws & Claws
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="index.html" target="">Home</a>
+          <a href="shop.html" target="_blank">Shop</a>
+          <a href="contact.html" target="_blank">Contact</a>
+          <a href="giftcard.html" target="_blank">Gift Cards</a>
+        </div>
+      </div>
+
+    <!-------------NAV*******BAR********END----------------------->
+
+
+
+
+  <!-- start header section -->
+  <header id="header-section">
+    <div class="header-text container">
+        <h1>About The Pet Shop</h1>
+        <p>
+            The Pet Shop is a small pet boutique that caters to the needs of all our fury friends. <br> The Pet shop Has you Covered For All the Pet Supplies and Pet Care You Need. <br> We have amazing prices, every day. Explore more than 1,000 favorite brands, including <br> Blue Buffalo, Nutro, Natural Balance, and Tidy Cats – all from the comfort of home.
+        </p>
+    </div>
+</header>
+<!-- end header section -->
+
+<main>
+    <section class="about-section text-center">
+        <div class="whoWeAre-box container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <img src="../img/catcreeping.jpg" class="img-fluid" alt="">
+                </div>
+                
+                <div class="col-md-6">
+                    <h2>Who We Are</h2>
+                    <p>
+                        At The Pet Shop, we strive to deliver the best products with the best service and we want to become even better. Happy customers are always our #1 priority, and our team members are passionate about finding new ways to wow both pet owners and the industry at large.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="whyWeDoIt-box container">
+            <div class="row">
+
+                <div class="col-md-6 order-md-2">
+                    <img src="../img/dogcouch.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-md-6 order-md-1">
+                    <h2>Why We Do It</h2>
+                    <p>
+                        Our mission here at The Pet Shop is To be the most trusted and convenient online destination for pet parents (and partners), everywhere. Our experts are here 24/7 to answer questions and help you find the perfect items for your pet. We also have a 100% Unconditional Satisfaction Guaranteed Policy on every order, just in case they’re not crazy about that new food or toy. Shopping for your pet has never been easier.
+                    </p>
+                    <ul class="text-justify mt-4">
+                        <li>we take pride in the brands we carry</li>
+                        <li>we care about the well being of our fury friends</li>
+                        <li>we donate to the animals care society</li>
+                        <li>we love animals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+<!-- start of footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+           <div class="col-lg-3">
+            <a class="navbar-brand" href="#">The Animal House</a>
+           </div>
+
+            <div class="col-lg-6 d-flex justify-content-center">
+            <form action="">
+                <input type="email" placeholder="Talk to Us">
+                <a href="#" class="cta">Submit</a>
+            </form>
+            </div>
+
+            <div class="col-lg-3 d-flex justify-content-center">
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+            </div>
+
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+
+            <div class="social-icons">
+                <i class="fab fa-twitter"></i>
+            </div>
+            
+            <div class="social-icons">
+                <i class="fab fa-youtube"></i>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        let links = document.getElementsByClassName("nav-link")
+
+        for (let i = 0; i < links.length; i++) {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                document.getElementById("nav-bar").classList.add("color");
+                document.getElementById("pawLogo").classList.add("link-color");
+                document.getElementById("phone-number").style.border =  "1px solid #21110e";
+                links[i].classList.add("link-color");
+                } else {
+                    document.getElementById("nav-bar").style.top = "0px";
+                    document.getElementById("nav-bar").classList.remove("color");
+                    document.getElementById("pawLogo").classList.remove("link-color");
+                    document.getElementById("phone-number").style.border =  "1px solid #ffd880";
+                    links[i].classList.remove("link-color");
+            }
+        }
+    }
+</script>
+</body>
+</html>

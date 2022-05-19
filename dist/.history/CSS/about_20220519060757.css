@@ -1,0 +1,53 @@
+/* Global Reset */
+* {
+    /* margin: 0 ;
+    padding: 0; */
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.row{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*** Global ***/
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #21110e;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+section {
+    margin-top: 15rem;
+}
+
+
+/*** Start of Nav

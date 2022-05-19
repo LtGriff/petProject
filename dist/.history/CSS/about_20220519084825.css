@@ -1,0 +1,248 @@
+/** NAV BAR **/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #87684e;
+  
+  /**
+    opacity: .5;
+    filter: alpha(opacity=50);
+    position: relative;**/
+    /* z-index: ; */
+  
+  
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(11, 4, 4, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 1420px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    z-index: 9;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  
+ /** HEADER SECTION **/
+     
+#header-section{
+    height: 90vh;
+    background-image: linear-gradient( 
+        to left bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.5)),
+    url("../img/catsleep.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 2000px;
+    height: 850px;
+    resize: both;
+    overflow: scroll;
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 76%);
+
+  }
+
+
+  .header-text {
+    text-align: center;
+    padding-top: 15%;
+    /* position: absolute;
+    top: 35%;
+    left: 10%; */
+    color: #ffffff;
+}
+
+.header-text h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.header-text p {
+    margin-bottom: 2.5rem;
+}
+
+.cta {
+    padding: 0.8rem 4rem;
+    border-radius: 0.4rem;
+    color: #21110e;
+    font-weight: 400;
+}
+
+.cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.cta:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.cta::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.cta:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+  /*** end of header section ***/
+
+
+
+  /*** who we are section ***/
+
+.about-section img {
+    border-radius: 6rem;
+    height: 600px;
+    width: 600px;
+}
+
+.about-section .whyWeDoIt-box {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.about-section .whyWeDoIt-box ul {
+    list-style-type: circle;
+}
+
+/*** why we do it section ***/
+
+/*** footer section ***/
+footer {
+    padding: 2.5rem;
+    background-color: #232323;
+}
+footer ul {
+    list-style-type: none;
+}
+
+footer input {
+    width: 200px;
+    height: 3rem;
+    border-radius: 0.4rem;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+footer .cta {
+    margin-left: 1rem;
+    background-color: #ffb200;
+    padding: 0.3rem 3rem;
+    border-radius: 0.4rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+footer .social-icons {
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: #ffb200;
+}
+
+@media (max-width:190px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background: rgb(234,212,189);
+      background: linear-gradient(7deg, rgba(234,212,189,1) 0%, rgba(204,175,140,1) 24%, rgba(191,161,124,1) 64%, rgba(135,104,78,1) 98%);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(28vh - 50px);
+      overflow-y: auto;
+    }
+
+  }
+
+
